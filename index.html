@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Ece Nur ŞENGÜL</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<body class="inter highlight">
+    <div class="container">
+                <div class="header"> 
+                    <p class="italic">Ece Nur ŞENGÜL</p>
+                    <h1>Ece Nur ŞENGÜL</h1>
+                    <p class="highlight">This is a paragraph with a class.</p>
+                    <p class="highlight">Another paragraph with the same class.</p>
+                </div>
+                <div class="sidebar highlight">
+                    <p class="white">Sidebar</p>
+                    <h2>Sidebar</h2>
+                <ul class="white">
+                    <button>Link 1</button>
+                    <button>Link 2</button>
+                    <button>Link 3</button>
+                </ul>
+                </div>
+                <div class="main=content">
+                    <h2>Main Content</h2>
+                    <p>This is the main content area of the web page.</p>
+                </div>
+                <div class="footer">
+                    &copy; <a href="https://ecenursengul.github.io/my-first-website/" target="_blank">ecenursengul</a>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu">
+                        <div class="date">17 March 2026</div>
+                        <div class="links">
+                            <div class="signup">Sign Up</div>
+                            <div class="login">Login</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-grid-continer">
+                    <div class="photo-grid">
+                        <div class="photo-grid-item first-item">
+                            <img src="one.svg">
+                        </div>
+                        <div class="photo-grid-item">
+                            <img src="two.svg">
+                        </div>
+                        <div class="photo-grid-item">
+                            <img src="three.svg">
+                        </div>
+                        <div class="photo-grid-item">
+                            <img src="four.svg">
+                        </div>
+                        <div class="photo-grid-item">
+                            <img src="five.svg">
+                        </div>
+                </div>
+<div id="myElement">
+    <p>This is some initial content.</p>
+</div>
+
+
+    <script>
+        let myElement = document.getElementById('myElement');
+
+
+    myElement.innerHTML = '<p> New content added with innerHTML!</p>';
+      </script>
+
+<img id = "myImage" src = "three.svg" alt="Initial Image">
+<button onclick="changeImageSource()">Change Image Source</button>
+
+<script>
+    function changeImageSource() {
+        let myImage = document.getElementById('myImage');
+        let myImageSource = src = 'four.svg';
+        myImage.setAttribute('src', myImageSource);
+        myImage.setAttribute('alt', 'New Image Alt Text');
+    }
+</script>
+<p id="myParagraph">Tis is a paragraph.</p>
+<button onclick="addItalic()">Add Italic</button>
+
+<div id="parent">
+    <p id="child">This child is a paragraph.</p>
+</div>
+
+
+
+</body>
+    </html>      
+    
+    <button onclick="createNewDiv()">Create New Div</button>
+    <script>
+        function createNewDiv(){
+        let VariableForTheNewDiv = document.createElement('div');
+        VariableForTheNewDiv.classList.add('newDiv');
+        VariableForTheNewDiv.textContent = 'This is a dynamically created by div!';
+        document.body.appendChild(VariableForTheNewDiv);
+
+        
+}
+    </script>
+
+    <button id='myButton'>Create New Div</button>
+    
+    <script src="script.js"></script>
