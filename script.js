@@ -151,5 +151,10 @@ console.log(parentElement);
 
         let myButton = document.getElementById('myButton');
         myButton.addEventListener('click', function (event){
+
+            let VariableForMyButton = document.createElement('div');
+      
+        VariableForMyButton.textContent = 'Button clicked!';
+        document.body.appendChild(VariableForMyButton);
             console.log('Button clicked!', event);
         });
